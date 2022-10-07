@@ -17,7 +17,7 @@ export default {
   plugins: [
     resolve(),
     commonjs(),
-    postcss(), // use postcss plugin
+    postcss(),
     typescript({
       include: ["src/**/*.ts"],
     }),

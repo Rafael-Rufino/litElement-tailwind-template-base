@@ -1,6 +1,3 @@
-import "./global/styles.css";
-import { LitElement } from "lit-element";
-export default class AppComponent extends LitElement {
-    createRenderRoot(): this;
-    render(): import("lit-html").TemplateResult<1>;
-}
+import { Button } from "./components/button";
+import { Hello } from "./components/hello";
+export { Button, Hello };

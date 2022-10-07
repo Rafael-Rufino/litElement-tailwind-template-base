@@ -1,6 +1,11 @@
 {
-  "name": "rollup-starter-app",
+  "name": "ui-componet-library",
+  "version": "0.0.1",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "author": "Rafael Rufino <rafaelrufino.52@gmail.com>",
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.12.12",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.1.0",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
@@ -36,5 +41,16 @@
     "watch": "rollup -c -w",
     "dev": "npm-run-all --parallel start watch",
     "start": "serve public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafael-rufino/web-components-with-litelement-publish-in-npm.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "typings": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
